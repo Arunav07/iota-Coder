@@ -1,17 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Explora&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 *{
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 body{
     text-align: center;
 }
+.main1{
+  display: grid;
+}
+.navbar{
+  padding: 1.5vw 0.75vw;
+  max-width: 98vw;
+  min-width: 320px;
+  display: flex;
+  justify-content: space-between;
+}
+.IEEELogo{
+  margin-left: 5vw;
+}
+.IEEELogo img{ 
+  max-width: 100px;
+  max-height: inherit;
+}
+.navbarLinks{
+  justify-content: space-around;
+  align-items: center;
+}
+.navbarLinks a{
+  color: inherit;
+  text-decoration: none;
+  margin: auto 3vw;
+font-family: 'Inknut Antiqua', serif;
+font-size: 1.5vmax;
+font-weight: 700;
 
+}
+.navbarLinks a span{
+background:#00db84;
+background-clip: border-box;
+-webkit-font-smoothing: antialiased;
+background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
 .darkMode{
-    float: right;
+    margin-right: 2vw;
     width: 5vw;
     height: 2.5vw;
-    padding: 5px
+    cursor: pointer;
 }
 .togglingDiv{
     background: black;
@@ -19,18 +57,18 @@ body{
     border-radius: 40px;
 }
 .round{
-    background: white;
-    width: 1.5vw;
-    height: 1.5vw;
-    margin:5px 0 auto auto;
+    width: 1.7vw;
+    height: 1.75vw;
+    margin: 0px 5px auto auto;
     border-radius: 50%;
     position: sticky;
-    top: 1vw
+    top: 4.2vw;
+    background: white
 }
 .round.Left{
-    margin-left: 0;
+    margin-left: 5px;
     margin-right: auto;
-    transition-duration: 0.3s !important;
+    transition-duration: 1s !important;
 }
 .Black{
     background: black;
@@ -47,9 +85,27 @@ body {
   font-weight: 300;
 }
 .welcome{
-    display: flex;
     margin: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+/* .DesignerButton{
+  animation: backgroundChange 1s 1;
+} */
+
+@keyframes backgroundChange{
+0%{
+  color: black;
+  background-image: linear-gradient(to right bottom, #2265c9, #0096ed, #00bdd1, #00db84, #a8eb12); ;
 }
+100%{
+  color: white;
+  background-color: black;
+  background-image: none
+}
+}
+
 .letter {
   text-align: center;
   font-size: 10vmax;
@@ -61,9 +117,19 @@ body {
   margin: 0;
 }
 
+@keyframes toArunav {
+  from{
+display: none;
+  }
+  to{
+display: flex;
+margin-top: 5rem
+  }
+}
 .to, .Arunav {
-  font-size: 5vmax;
-  color: white;
+  font-size: 5vw;
+  color: rgb(0, 0, 0);
+  animation: toArunav 5s 1
 }
 .to {
   padding: 2px 1.6vmax;
@@ -101,9 +167,43 @@ body {
 }
 
 .lessGo{
-    background: linear-gradient(to right, red, yellow);
+    background-image: linear-gradient(to right bottom, #2265c9, #0096ed, #00bdd1, #00db84, #a8eb12);
     width: 300px;
     height: 300px;
     outline: none;
-    border-radius: 50%
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin: 5rem auto 5.5rem;
+
+}
+@media (min-width: 400px){
+  .letter{
+    font-size: 8.6vmax
+  }
+
+}
+@media (min-width: 768px){
+  .letter{
+    font-size: 5vmax
+  }
+}
+
+@media (min-width: 1400px){
+    .letter{
+    font-size: 10vmax;
+  }
+}
+@media(min-width: 1500px){
+  .round{
+    top: 3.6vw
+  }
+
+}
+@media(min-width: 1800px){
+  .round{
+    top: 3.4vw
+  }
 }

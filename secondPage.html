@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="index2.css">
 </head>
 <body>
+
 <div class="scrollDist"></div>
-<div class="main">
+<div class="main" id="MainSecond">
   <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
     <mask id="m">
       <g class="cloud1">
@@ -27,18 +28,26 @@
     <image class="mountFg" xlink:href="https://assets.codepen.io/721952/mountFg.png" width="1200" height="800"/>
     <image class="cloud1" xlink:href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"/>
     <image class="cloud3" xlink:href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"/>
-    <text fill="#fff" x="350" y="200" class="mainTitle">What Do You Think</text>
-    <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" />
+    <text fill="#fff" x="15%" y="200" class="mainTitle">The North</text>
+    <text fill="#ff5" x = "60%" y = 400 class="Body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</text>
     
     <g mask="url(#m)">
-      <rect fill="#fff" width="100%" height="100%" />      
-      <text style="text-align: center;" x="450" y="200" fill="#162a43">Will Happen</text>
-      <text style="text-align: center;" x="440" y="300">in a 100 years</text>
+      <rect fill="#fff" width="100%" height="100%" />   
+ 
+      <text  x="50%" y="200" fill="#f0f">The Center</text>
+      
+      <text  x="50%" y="800" fill="#000">The Third</text>
     </g>
     
-    <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"/>
   </svg>
 </div>
+<div class="main2">
+
+</div>
+
+
+
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"></script>
