@@ -253,14 +253,15 @@ margin-top: 5rem
     font-weight: 700;
     border: none;
     cursor: pointer;
-    margin: 8rem auto 0;
 background: transparent;
   -webkit-background-clip: border-box;
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
   color: transparent;
   border: 28px solid black;
-  filter: blur(0px)
+  filter: blur(0px);
+  margin-top: 7%;
+  position: sticky;
 }
 .BlackLessGo{
   border: 28px solid white;
@@ -359,9 +360,9 @@ background: transparent;
   margin-top: 0%
 }
 }
-@media(min-width: 1500px){
+@media(min-width: 1400px){
   .round{
-    top: 3.4vw
+    top: 3.6vw;
   }
   .IEEELogo{
   margin-left: 5vw;
@@ -375,7 +376,14 @@ background: transparent;
   width: 15vw;
   max-height: inherit;
 }
-
+.lessGo{
+    width: 10rem;
+  height: 10rem;
+  border: 45px solid black
+}
+.BlackLessGo{
+  border: 45px solid white
+}
 }
 @media(min-width: 1800px){
   .round{
@@ -387,9 +395,6 @@ background: transparent;
   max-height: inherit;
 }
 .lessGo{
-  width: 10rem;
-  height: 10rem;
-  margin-top: 17rem;
   border: 60px solid black
 }
 .BlackLessGo{
