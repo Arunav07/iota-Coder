@@ -7,12 +7,48 @@
     <title>Loading</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
+<style>
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#demo {
+  position: absolute;
+  /* left: 50%;
+  top: 50%; */
+  width: auto;
+  height: auto;
+  max-height: 90%;
+  max-width: 90%;
+}
+</style>
+
 <body>
    <div class="LoadingBody">
-  <h1 id="Counting" class="Counting">1</h1>
+       <svg id="demo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<defs>
+<clipPath id="theClipPath">
+  <rect id="theSquare" x="0" y="0" width="1000" height="1000" fill="#fff" />
+</clipPath>  
+</defs> 
+<rect x="0" y="0" width="1000" height="1000" fill="#000" /> 
+<circle r="400" fill="white" cx="500" cy="500" />
+<g id="clipPathReveal" clip-path="url(#theClipPath)">
+  <circle r="400" fill="#f56f74" cx="500" cy="500"/>
+</g>
+</svg>
    </div> 
 </body>
+<script>
+gsap.fromTo("#clipPathReveal", 3000, {"y":"0", "y":"100%" })
+</script>
 <script src="index.js"></script>
+<script src="https://pixijs.download/release/pixi.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/Draggable.min.js"></script>

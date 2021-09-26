@@ -15,9 +15,8 @@ $('.lessGo').mouseleave(function () {
 
 
 //GSAP
-gsap.registerPlugin(MotionPathPlugin,TextPlugin);
+gsap.registerPlugin(MotionPathPlugin, TextPlugin);
 
-gsap.to('#Counting', { duration: 4, text: "2", ease: none });
 
 
 gsap.set('.main', {position:'fixed', background:'#fff', width:'100%', maxWidth:'100vw', top:0, left:'50%', x:'-50%'})
@@ -28,7 +27,7 @@ let tl = gsap.timeline({scrollTrigger:{trigger:'.scrollDist', start:'top top', e
     tl.fromTo('.cloud2', {y:-150},{y:-500}, 0)
     tl.fromTo('.cloud3', {y:0},{y:-650}, 0)
     tl.to('.mountBg', {y:-10},{y:-100}, 0)
-    tl.to('.mountMg', {y:-30},{y:-250}, 0)
+tl.to('.mountMg', { y: -30 }, { y: -250 }, 0)
 tl.to('.mountFg', { y: -600, duration: 3, ease: none,  }, 0)
     
-
+.fromTo('#clipPathReveal', {y: 0},{y:100}, 1)

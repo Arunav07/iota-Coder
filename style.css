@@ -167,7 +167,6 @@ margin-top: 5rem
 }
 
 .lessGo{
-    background-image: linear-gradient(to right bottom, #2265c9, #0096ed, #00bdd1, #00db84, #a8eb12);
     width: 300px;
     height: 300px;
     outline: none;
@@ -177,7 +176,38 @@ margin-top: 5rem
     border: none;
     cursor: pointer;
     margin: 5rem auto 5.5rem;
+ 		mask-image: linear-gradient(to top, red, cyan);
+    background: linear-gradient( to top, rgb(255, 51, 153), rebeccapurple);	
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  border: 1px solid gold;
+  filter: blur(3px)
+}
 
+.lessGo:before{
+    content:"";
+  z-index:-1;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.lessGo,
+.lessGo:before {   
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 1s ease-in-out;
+
+}
+
+
+
+.lessGo:hover,
+.lessGo:hover:before{
+  background-position: bottom;
 }
 @media (min-width: 400px){
   .letter{
