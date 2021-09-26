@@ -9,17 +9,79 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
-<section class="main1">
+<body onload="LoadingFunction()">
+<div id="loading">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="240.000000pt" height="400.000000pt" viewBox="0 0 640.000000 1280.000000"
+ preserveAspectRatio="xMidYMid meet" class="one">
+<metadata>
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+fill="#fff" stroke="#fff" stroke-width="30">
+<path d="M3073 10957 l-2912 -1842 -1 -80 0 -80 371 -645 c203 -355 454 -790
+556 -968 l185 -323 442 225 c376 191 1315 664 1339 674 4 2 7 -1779 7 -3957
+l0 -3961 103 0 c64 0 196 13 348 35 243 34 708 100 1519 214 234 33 587 83
+785 111 198 27 375 52 393 55 l32 6 0 6189 0 6190 -127 -1 -128 -1 -2912
+-1841z"/>
+</g>
+</svg>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="240.000000pt" height="600.000000pt" viewBox="0 0 881.000000 1280.000000"
+ preserveAspectRatio="xMidYMid meet" class="zero">
+<metadata>
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+fill="#fff" stroke="#fff" stroke-width="30">
+<path d="M4248 12499 c-768 -46 -1508 -390 -2094 -974 -265 -264 -468 -529
+-701 -915 -534 -885 -874 -1965 -993 -3155 -61 -612 -66 -1306 -14 -1915 134
+-1583 651 -2968 1480 -3960 441 -529 1080 -938 1717 -1100 317 -80 550 -106
+892 -97 389 10 685 65 1035 193 129 47 432 198 560 279 872 550 1606 1630
+1984 2918 212 720 318 1449 346 2368 44 1453 -206 2807 -725 3929 -286 619
+-705 1236 -1062 1566 -573 527 -1258 816 -2048 864 -184 11 -190 11 -377 -1z
+m457 -924 c234 -69 402 -219 528 -470 186 -372 268 -1004 318 -2470 5 -159 12
+-922 16 -1695 8 -2134 -15 -3189 -88 -3985 -23 -255 -60 -537 -89 -686 -111
+-561 -337 -868 -715 -970 -115 -31 -355 -31 -470 0 -89 24 -202 74 -269 120
+-159 110 -303 327 -384 581 -128 400 -201 1179 -233 2470 -14 585 -7 3980 10
+4370 51 1210 123 1809 261 2152 124 310 310 500 567 578 112 34 158 39 313 36
+121 -3 160 -8 235 -31z"/>
+</g>
+</svg>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="240.000000pt" height="600.000000pt" viewBox="0 0 881.000000 1280.000000"
+ preserveAspectRatio="xMidYMid meet" class="zero">
+<metadata>
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+fill="#fff" stroke="#fff" stroke-width="30">
+<path d="M4248 12499 c-768 -46 -1508 -390 -2094 -974 -265 -264 -468 -529
+-701 -915 -534 -885 -874 -1965 -993 -3155 -61 -612 -66 -1306 -14 -1915 134
+-1583 651 -2968 1480 -3960 441 -529 1080 -938 1717 -1100 317 -80 550 -106
+892 -97 389 10 685 65 1035 193 129 47 432 198 560 279 872 550 1606 1630
+1984 2918 212 720 318 1449 346 2368 44 1453 -206 2807 -725 3929 -286 619
+-705 1236 -1062 1566 -573 527 -1258 816 -2048 864 -184 11 -190 11 -377 -1z
+m457 -924 c234 -69 402 -219 528 -470 186 -372 268 -1004 318 -2470 5 -159 12
+-922 16 -1695 8 -2134 -15 -3189 -88 -3985 -23 -255 -60 -537 -89 -686 -111
+-561 -337 -868 -715 -970 -115 -31 -355 -31 -470 0 -89 24 -202 74 -269 120
+-159 110 -303 327 -384 581 -128 400 -201 1179 -233 2470 -14 585 -7 3980 10
+4370 51 1210 123 1809 261 2152 124 310 310 500 567 578 112 34 158 39 313 36
+121 -3 160 -8 235 -31z"/>
+</g>
+</svg>
+</div>
+
+<section class="main1" id="main1">
     <div class="navbar">
 <div class="IEEELogo">
     <img src="images/IEEE_bluewhitebg.png" alt="">
 </div>
 <div class="navbarLinks">
-    <a href=""><span class="10">Decennial</span></a>
-    <a href=""><span class="25">Quadranscentennial</span></a>
-    <a href=""><span class="50">Semicentennial </span></a>
-    <a href=""><span class="100">Centennial</span></a>
+    <a href="secondPage.html#decade"><span class="10">Decennial</span></a>
+    <a href="#twentyFive"><span class="25">Quadranscentennial</span></a>
+    <a href="#Fifty"><span class="50">Semicentennial </span></a>
+    <a href="#hundred"><span class="100">Centennial</span></a>
 </div>
             <div class="darkMode">
         <div class="togglingDiv">

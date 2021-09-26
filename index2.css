@@ -14,6 +14,7 @@ div {
   position:absolute;
 }
 
+
 .Body{
   font-size: 14px;
   display: flex;
@@ -21,4 +22,8 @@ div {
 }
 text{
   display: flex;
+}
+
+.main4{
+  background: url('https://cdna.artstation.com/p/assets/images/images/015/195/950/large/tarmo-juhola-utopia-kopio.jpg?1547455259') no repeat center;
 }
