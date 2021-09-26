@@ -20,9 +20,9 @@ function LoadingFunction() {
  
 $(document).ready(function LoadingFunction() {
     $('#loading').show();
-    $('#loading').delay(5000).fadeOut(100);
+    $('#loading').delay(3000).fadeOut(100);
     $("#main1").hide();
-    $("#main1").delay(5000).fadeIn(100);  
+    $("#main1").delay(3000).fadeIn(100);  
 
 })
 

@@ -329,10 +329,14 @@ margin-top: 5rem
     width: 6vw;
     height: 3vw;
   }
+.wrapper1{
+  margin-top: 5%
+}
   .round{
         top: 7.2vw;
         height: 2vw;
         width: 2vw;
+            margin: 0px 5px auto auto;
   }
 }
 
@@ -346,18 +350,23 @@ margin-top: 5rem
     margin: auto 0
   }
     .round{
-    top: 2.8vw
+    top: 4vw
   }
+  .wrapper1{
+  margin-top: 0%
+}
 }
 @media(min-width: 1500px){
   .round{
-    top: 3.6vw
+    top: 3.9vw
   }
   .IEEELogo{
   margin-left: 5vw;
 }
+
   .navbarLinks a span{
-    font-size: 2vmax
+    font-size: 2vmax;
+    line-height: 2.1vmax;
   }
 .IEEELogo img{ 
   width: 15vw;
@@ -368,7 +377,7 @@ margin-top: 5rem
 @media(min-width: 1800px){
   .round{
     top: 3.2vw;
-    margin: 0px 10px auto auto;
+    margin: 0px 10px 0  auto;
   }
   .IEEELogo img{ 
   width: 15vw;

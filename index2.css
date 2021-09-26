@@ -26,7 +26,7 @@ h1{
 
 
 .Morph1{
-      backdrop-filter: blur(50px) saturate(100%);
+    backdrop-filter: blur(50px) saturate(100%);
     -webkit-backdrop-filter: blur(50px) saturate(200%);
     background-color: rgba(36, 41, 34, 0);
     border-radius: 12px;
@@ -42,7 +42,21 @@ h1{
     color: rgba(59, 59, 59, 0.753);
 
   }
-  .Morph1 h1{
+
+  .Morph2{
+backdrop-filter: blur(50px) saturate(100%);
+    -webkit-backdrop-filter: blur(50px) saturate(200%);
+    background-color: rgba(36, 41, 34, 0);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    position: relative;
+    text-align: center;
+    width:80vw;
+    height: -webkit-fill-available;
+    margin: 5% auto;
+  }
+  
+  .Morph1 h1, .Morph2 h1, .Morph3 h1, .Morph4 h1{
     color: transparent;
     background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
             background-repeat: repeat;
@@ -50,6 +64,7 @@ h1{
         -webkit-text-fill-color: transparent;
         background-clip: text;
   }
+
 .Morph1 p{
   font-size: 1.5vw;
   letter-spacing: 4px;
