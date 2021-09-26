@@ -27,24 +27,30 @@ $(document).ready(function LoadingFunction() {
 })
 
 
+(function() {
+    document.addEventListener("mousemove", parallax);
+    const elem = document.querySelector("#main1");
+    function parallax(e) {
+        let _w = window.innerWidth/2;
+        let _h = window.innerHeight/2;
+        let _mouseX = e.clientX;
+        let _mouseY = e.clientY;
+        let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+        let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+        let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+        let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+        console.log(x);
+        elem.style.backgroundPosition = x;
+    }
+
+})();
+
 
 //GSAP
-gsap.registerPlugin(MotionPathPlugin, TextPlugin);
+
+// gsap.set('.main', {position:'fixed', background:'#fff', width:'100%', maxWidth:'100vw', top:0, left:'50%', x:'-50%'})
+// gsap.set('.scrollDist', { width: '100%', height: '400%' })
+gsap.registerPlugin(scrollTrigger);
+let tl = gsap.timeline({ scrollTrigger: { trigger: '.scrollDist', start: 'top top', end: 'bottom bottom', scrub: 1 } })
 
 
-
-gsap.set('.main', {position:'fixed', background:'#fff', width:'100%', maxWidth:'100vw', top:0, left:'50%', x:'-50%'})
-gsap.set('.scrollDist', { width: '100%', height: '400%' })
-let tl = gsap.timeline({scrollTrigger:{trigger:'.scrollDist', start:'top top', end:'bottom bottom', scrub:2 }})
-    .fromTo('.sky', {y:0},{y:-200}, 0)
-    tl.fromTo('.cloud1', {y:100},{y:-800}, 0)
-    tl.fromTo('.cloud2', {y:-150},{y:-500}, 0)
-    tl.fromTo('.cloud3', {y:0},{y:-650}, 0)
-    tl.to('.mountBg', {y:-10},{y:-100}, 0)
-tl.to('.mountMg', { y: -30 }, { y: -250 }, 0)
-tl.to('.mountFg', { y: -600, duration: 3, ease: none,  }, 0)
-   
-
-
-
-gsap.to(".one", {duration: 1, background: "#f0f"}, 1)

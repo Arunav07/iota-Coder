@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body, html {
   width:100%;
   height:100%;
@@ -8,10 +7,6 @@ body, html {
   font-size:50px;
   text-align:center;
   max-width:100vw
-}
-
-div {
-  position:absolute;
 }
 
 
@@ -24,6 +19,85 @@ text{
   display: flex;
 }
 
-.main4{
-  background: url('https://cdna.artstation.com/p/assets/images/images/015/195/950/large/tarmo-juhola-utopia-kopio.jpg?1547455259') no repeat center;
+h1{
+  font-family: Montserrat;
+  font-weight: 600
+}
+
+
+.Morph1{
+      backdrop-filter: blur(50px) saturate(100%);
+    -webkit-backdrop-filter: blur(50px) saturate(200%);
+    background-color: rgba(36, 41, 34, 0);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    position: relative;
+    text-align: center;
+    width:80vw;
+    height: -webkit-fill-available;
+    margin: 5% auto;
+    vertical-align: middle;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: rgba(59, 59, 59, 0.753);
+
+  }
+  .Morph1 h1{
+    color: transparent;
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+            background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+  }
+.Morph1 p{
+  font-size: 1.5vw;
+  letter-spacing: 4px;
+  line-height: 4vw;
+  animation: typing 3s steps(20, end);
+      user-select: none;
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+@keyframes typing{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+#decade{
+  background-image: url('https://images.adsttc.com/media/images/5938/0481/e58e/ce61/4200/01bd/slideshow/Screen_Shot_2017-06-07_at_6.32.20_AM.jpg?1496843385');
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh
+}
+
+#twentyFive{
+    background-image: url('https://cdn.pixabay.com/photo/2019/09/23/21/48/protest-4499802_1280.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh
+}
+#Fifty{
+  background-image: url('https://cdna.artstation.com/p/assets/images/images/015/195/950/large/tarmo-juhola-utopia-kopio.jpg?1547455259');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh
+}
+
+#Hundred{
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/035/085/286/large/yota-tasaki-sf-city.jpg?1614071741');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh
 }
