@@ -262,7 +262,9 @@ background: transparent;
   border: 28px solid black;
   filter: blur(0px)
 }
-
+.BlackLessGo{
+  border: 28px solid white;
+}
 .lessGo:before{
     content:"";
   z-index:-1;
@@ -276,8 +278,6 @@ background: transparent;
 .lessGo:before {   
   background-size: 100% 200%;
   background-position: top;
-  transition: background-position 1s ease-in-out infinite;
-
 }
 
 
@@ -385,5 +385,14 @@ background: transparent;
   .IEEELogo img{ 
   width: 15vw;
   max-height: inherit;
+}
+.lessGo{
+  width: 10rem;
+  height: 10rem;
+  margin-top: 17rem;
+  border: 60px solid black
+}
+.BlackLessGo{
+  border: 60px solid white
 }
 }

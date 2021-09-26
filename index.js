@@ -4,6 +4,8 @@ $('.darkMode').click(function () {
     $('.round').toggleClass("Black");
     $('.round').toggleClass("Left");
     $('*').css("transition", "0.1s");
+    $('.navbar').toggleClass("Black");
+    $('.lessGo').toggleClass('BlackLessGo')
 });
 
 $('.lessGo').mouseenter(function () {
@@ -20,9 +22,9 @@ function LoadingFunction() {
  
 $(document).ready(function LoadingFunction() {
     $('#loading').show();
-    $('#loading').delay(3000).fadeOut(100);
+    $('#loading').delay(2000).fadeOut(100);
     $("#main1").hide();
-    $("#main1").delay(3000).fadeIn(100);  
+    $("#main1").delay(2000).fadeIn(100);  
 
 })
 
