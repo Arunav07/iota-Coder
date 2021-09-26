@@ -44,7 +44,19 @@ h1{
   }
 
   .Morph2{
-backdrop-filter: blur(50px) saturate(100%);
+    backdrop-filter: blur(50px) saturate(100%);
+    -webkit-backdrop-filter: blur(50px) saturate(200%);
+    background-color: rgba(36, 41, 34, 0);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    position: relative;
+    text-align: center;
+    width:82vw;
+    height: -webkit-fill-available;
+    margin: 5% auto;
+  }
+    .Morph3{
+    backdrop-filter: blur(50px) saturate(100%);
     -webkit-backdrop-filter: blur(50px) saturate(200%);
     background-color: rgba(36, 41, 34, 0);
     border-radius: 12px;
@@ -55,25 +67,36 @@ backdrop-filter: blur(50px) saturate(100%);
     height: -webkit-fill-available;
     margin: 5% auto;
   }
-  
   .Morph1 h1, .Morph2 h1, .Morph3 h1, .Morph4 h1{
     color: transparent;
     background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
-            background-repeat: repeat;
+            background-repeat:no-repeat;
+            background-size: cover;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        font-size: 10vw;
   }
-
-.Morph1 p{
+  .Morph3{
+    font-size: 9vw
+  }
+.Morph1 span, .Morph2 span, .Morph3 span, .Morph4 span{
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+            background-repeat:no-repeat;
+            background-size: cover;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 2vw;
+        font-weight: 600;
+}
+.Morph1 p, .Morph2 p, .Morph3 p, .Morph4 p{
   font-size: 1.5vw;
   letter-spacing: 4px;
   line-height: 4vw;
   animation: typing 3s steps(20, end);
       user-select: none;
-      display: flex;
-      flex-grow: 1;
-      flex-wrap: wrap;
+
 justify-content: space-evenly;
 }
 
